@@ -1,0 +1,39 @@
+.font {
+    font-size: 70px;
+}
+
+.animation {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+
+}
+.image{
+    margin-top: -35px;
+    width: 85%;
+}
+
+.image:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(0.9);
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+@media (max-width:520px) {
+    .image{
+        margin-top: 0px;
+        width: 100%;
+    }
+}
